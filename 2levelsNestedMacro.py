@@ -56,6 +56,10 @@ for i in range(sc):
         temp = sourceCode[i]
         firstOutputSourceCode.append(temp)
 
+print("First level expanded code is : ")
+for i in range(len(firstOutputSourceCode)):
+    print(firstOutputSourceCode[i])
+
 for i in range(len(firstOutputSourceCode)):
     if macroNames[1] in firstOutputSourceCode[i]:
         nmc += 1
